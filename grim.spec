@@ -18,7 +18,7 @@
 
 Name:           grim
 Version:	1.4.0
-Release:	1
+Release:	2
 Summary:        Wayland compositor image grabber
 License:        MIT
 URL:            https://github.com/emersion/grim
