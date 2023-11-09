@@ -4,7 +4,7 @@ Release:        1
 Summary:        Wayland compositor image grabber
 License:        MIT
 URL:            https://github.com/emersion/grim
-Source0:        https://git.sr.ht/~emersion/grim/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://git.sr.ht/~emersion/grim/archive/v%{version}/%{name}-v%{version}.tar.gz
 #Source0:        https://github.com/emersion/grim/archive/v%{version}.tar.gz
 BuildRequires:  meson
 BuildRequires:  scdoc
@@ -17,7 +17,7 @@ BuildRequires:  pkgconfig(wayland-protocols) >= 1.14
 This tool can grab images from a Wayland compositor.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-v%{version} -p1
 
 %build
 %meson
